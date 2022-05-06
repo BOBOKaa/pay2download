@@ -18,7 +18,7 @@ jobs:
         run: yarn
 
       - name: Build
-        run: export CI=false yarn run build
+        run: CI=false yarn run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
